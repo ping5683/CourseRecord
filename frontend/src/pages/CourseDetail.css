@@ -1,0 +1,393 @@
+.course-detail {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.course-header {
+  background: linear-gradient(135deg, #1677ff 0%, #69c0ff 100%);
+  color: white;
+  padding: 20px 16px;
+  position: relative;
+}
+
+.course-title {
+  margin-bottom: 8px;
+}
+
+.course-title h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.course-status {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.course-content {
+  padding: 16px;
+}
+
+.info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.info-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-value.amount {
+  color: #ff4d4f;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #1677ff;
+}
+
+.schedule-time {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.schedule-day {
+  font-weight: 600;
+  color: #333;
+}
+
+.schedule-range {
+  font-size: 14px;
+  color: #666;
+}
+
+.schedule-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+  font-size: 14px;
+  color: #666;
+}
+
+.contract-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #1677ff;
+}
+
+.contract-icon {
+  font-size: 24px;
+  color: #1677ff;
+  margin-right: 12px;
+}
+
+.contract-link {
+  color: #1677ff;
+  text-decoration: none;
+  font-weight: 500;
+  flex: 1;
+}
+
+.contract-link:hover {
+  text-decoration: underline;
+}
+
+.contract-upload-section {
+  text-align: center;
+  padding: 30px 20px;
+  color: #999;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #d9d9d9;
+}
+
+.contract-placeholder-icon {
+  font-size: 64px;
+  color: #d9d9d9;
+  margin-bottom: 12px;
+}
+
+.contract-placeholder-text {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.contract-format-info {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  margin-top: 8px;
+}
+
+.action-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 16px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 12px;
+}
+
+.action-button {
+  flex: 1;
+}
+
+.progress-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.progress-info:last-child {
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #52c41a, #73d13d);
+  transition: width 0.3s ease;
+}
+
+.empty-schedules {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.loading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.error-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #ff4d4f;
+}
+
+/* 多文件上传样式 */
+.contract-section .main-contract {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f0f7ff;
+  border-radius: 8px;
+  border-left: 3px solid #1677ff;
+}
+
+.contract-images-section {
+  margin-top: 20px;
+}
+
+.contract-images-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.contract-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contract-image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+}
+
+.contract-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+.contract-image-link {
+  font-size: 12px;
+  color: #1677ff;
+  text-decoration: none;
+}
+
+.contract-image-link:hover {
+  text-decoration: underline;
+}
+
+.contract-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.contract-actions .upload-button {
+  margin-top: 0;
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* 删除按钮样式 */
+.delete-file-button {
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  height: auto;
+  min-height: 24px;
+}
+
+.contract-image-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.delete-image-button {
+  font-size: 10px;
+  padding: 2px 6px;
+  height: auto;
+  min-height: 20px;
+}
+
+/* 图片加载失败时的占位符样式 */
+.contract-image-placeholder {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+/* 主合同文件容器样式 */
+.main-contract {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f0f7ff;
+  border-radius: 8px;
+  border-left: 3px solid #1677ff;
+  gap: 12px;
+}
+
+.contract-icon {
+  font-size: 24px;
+  color: #1677ff;
+  flex-shrink: 0;
+}
+
+.contract-link {
+  color: #1677ff;
+  text-decoration: none;
+  font-weight: 500;
+  flex: 1;
+}
+
+.contract-link:hover {
+  text-decoration: underline;
+}

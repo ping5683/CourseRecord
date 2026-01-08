@@ -1,0 +1,25 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+.layout-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.layout-tabbar {
+  background: #ffffff;
+  border-top: 1px solid #e8e8e8;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 适配iPhone X等机型 */
+@supports (padding: max(0px)) {
+  .layout-tabbar {
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+  }
+}

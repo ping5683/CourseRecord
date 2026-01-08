@@ -1,0 +1,176 @@
+.courses-page {
+  padding: 16px;
+  background: #f5f5f5;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 80px;
+}
+
+/* 选项卡 */
+.course-tabs {
+  margin-bottom: 16px;
+}
+
+.tab-list {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-item.active {
+  background: #1890ff;
+  color: white;
+  font-weight: 500;
+}
+
+/* 课程卡片 */
+.course-card {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:active {
+  transform: scale(0.98);
+}
+
+.course-content {
+  padding: 4px 0;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.course-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course-title h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.course-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.course-info {
+  margin-bottom: 12px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-icon {
+  color: #1890ff;
+  font-size: 16px;
+}
+
+.course-progress {
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1890ff 0%, #40a9ff 100%);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.course-schedules {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 8px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.schedule-day {
+  font-weight: 500;
+}
+
+.schedule-more {
+  font-size: 12px;
+  color: #1890ff;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* 空状态 */
+.empty-courses {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.empty-icon {
+  color: #d9d9d9;
+  margin-bottom: 16px;
+}
+
+.empty-courses h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.empty-courses p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* 添加按钮 */
+.add-button {
+  position: fixed;
+  right: 16px;
+  bottom: 80px;
+  z-index: 100;
+}

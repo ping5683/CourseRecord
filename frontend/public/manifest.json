@@ -1,0 +1,19 @@
+{
+  "name": "课程管理",
+  "short_name": "课程管理",
+  "description": "管理培训班、健身卡、美容卡等服务次数",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1890ff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["productivity", "education", "lifestyle"],
+  "lang": "zh-CN"
+}

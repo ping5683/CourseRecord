@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+dist/
+build/
+.DS_Store
+*.swp
+.vscode/
+.idea/
+query
+test-path.bat
+start-all.bat

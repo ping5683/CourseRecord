@@ -1,0 +1,82 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.login-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.login-form {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.login-tips {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+/* 注册/登录提示样式 */
+.register-tip,
+.login-tip {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link,
+.login-link {
+  color: #1677ff;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.register-link:hover,
+.login-link:hover {
+  color: #0958d9;
+}
+
+/* 适配小屏幕 */
+@media (max-width: 375px) {
+  .login-page {
+    padding: 16px;
+  }
+  
+  .login-header h1 {
+    font-size: 28px;
+  }
+  
+  .login-form {
+    padding: 24px 16px;
+  }
+  
+  .register-tip,
+  .login-tip {
+    font-size: 13px;
+    margin-top: 16px;
+  }
+}

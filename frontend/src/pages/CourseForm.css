@@ -1,0 +1,200 @@
+.course-form {
+  padding: 16px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.form-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-header p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.upload-section {
+  margin-top: 8px;
+}
+
+.upload-trigger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-trigger:hover {
+  border-color: #1677ff;
+  background: #f0f8ff;
+}
+
+.upload-trigger svg {
+  font-size: 32px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.upload-trigger span {
+  font-size: 14px;
+  color: #666;
+}
+
+.upload-preview {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 6px;
+}
+
+.upload-preview p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #52c41a;
+}
+
+.upload-preview a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.upload-preview a:hover {
+  text-decoration: underline;
+}
+
+/* 表单样式覆盖 */
+.adm-form-item-label {
+  font-weight: 500 !important;
+}
+
+.adm-form-item-extra {
+  font-size: 12px !important;
+  color: #999 !important;
+}
+
+.text-required::before {
+  content: '* ';
+  color: #ff4d4f;
+}
+
+/* 上课时间管理样式 */
+.schedule-section {
+  margin-top: 8px;
+}
+
+.empty-schedules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #999;
+}
+
+.empty-schedules p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.schedules-list {
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-info {
+  flex: 1;
+}
+
+.schedule-time {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.weekday {
+  font-weight: 500;
+  color: #333;
+  min-width: 40px;
+}
+
+.time-range {
+  color: #666;
+  font-size: 14px;
+}
+
+.schedule-detail {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.schedule-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* 上课时间模态框样式 */
+.schedule-modal {
+  padding: 8px 0;
+}
+
+.schedule-modal .form-group {
+  margin-bottom: 16px;
+}
+
+.schedule-modal .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.schedule-modal .time-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.schedule-modal .time-input:focus {
+  outline: none;
+  border-color: #1677ff;
+}
+
+/* 选择器样式调整 */
+.schedule-modal .adm-selector {
+  margin-top: 4px;
+}

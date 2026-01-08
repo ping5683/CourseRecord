@@ -1,0 +1,1 @@
+SELECT id, name, contract_path, contract_images FROM courses WHERE id = 3;

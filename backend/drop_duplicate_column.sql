@@ -1,0 +1,10 @@
+-- 删除多余的contractImages字段
+ALTER TABLE courses DROP COLUMN contractImages;
+
+-- 验证表结构
+SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_SCHEMA = 'course_management' 
+AND TABLE_NAME = 'courses'
+AND COLUMN_NAME LIKE '%contract%'
+ORDER BY COLUMN_NAME;
