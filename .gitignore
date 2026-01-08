@@ -10,3 +10,4 @@ build/
 query
 test-path.bat
 start-all.bat
+deployment-test
